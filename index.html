@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0c11">
+<title>CISA 3320 Wireless Project – Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<div class="layout">
+  <nav id="nav">
+    <h1>CISA 3320 Wireless Project</h1>
+    <div class="sub">Step-by-step checklist</div>
+    <div class="overall">
+      <div class="num" id="overallPct">0%</div>
+      <div class="bar"><i id="overallBar"></i></div>
+      <div class="hint" id="overallCount"></div>
+    </div>
+    <div id="navList"></div>
+  </nav>
+
+  <main>
+    <div class="toolbar">
+      <button class="menu-btn" id="menuBtn">☰ Menu</button>
+      <button class="primary" id="nextBtn">Next task →</button>
+      <button id="hideBtn" aria-pressed="false">Hide done</button>
+      <button id="expandBtn">Expand all</button>
+      <button id="collapseBtn">Collapse all</button>
+      <button id="exportBtn">Export progress</button>
+      <label class="btn" for="importFile">Import</label>
+      <input type="file" id="importFile" accept="application/json" hidden>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div id="intro"></div>
+    <div id="phases"></div>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+</body>
+</html>
